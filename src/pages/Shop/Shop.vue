@@ -1,0 +1,151 @@
+<template>
+  <div class="wrap">
+    <div class="m-hd">
+      <div class="m-cartHd">购物车</div>
+    </div>
+    <div class="reactid">
+      <div class="m-servicePolicy">
+        <div class="item">
+          <div class="servicePolicy"></div>
+          <span>30天无忧退货</span>
+        </div>
+        <div class="item">
+          <div class="servicePolicy"></div>
+          <span>48小时快速退款</span>
+        </div>
+        <div class="item">
+          <div class="servicePolicy"></div>
+          <span>满88元免邮费</span>
+        </div>
+      </div>
+      <div class="m-defaultPage">
+        <div class="container">
+          <div class="img"></div>
+          <div class="txt">
+            <div class="noCart-login">
+              <div class="noCart-title">去添加点什么吧</div>
+              <router-link to="/profile">
+                <div class="noCart-btn">登录</div>
+              </router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+
+  }
+</script>
+
+<style lang="less" type="text/less">
+@import "../../common/stylus/mixins";
+  .wrap{
+    .m-hd {
+      position: fixed!important;
+      left: 0;
+      top: 0;
+      z-index: 5;
+      width: 100%;
+      height: 132px;
+      .m-cartHd{
+        width: 100%;
+        padding: 1.5rem 0;
+        text-align: center;
+        background-color: #fff;
+        position: relative;
+        font-size: 4.5vw;
+      }
+    }
+    .reactid{
+      .m-servicePolicy{
+        position: relative;
+        z-index: 1;
+        height: .93333rem;
+        padding: 0 .4rem;
+        background: #f4f4f4;
+        display: -moz-flex;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        .item{
+          margin-top: 130px;
+          display: flex;
+          align-items: center;
+          color: #666;
+          .servicePolicy{
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/servicePolicy-1d7541974f.png);
+            background-repeat: no-repeat;
+            width: .13333rem;
+            height: .13333rem;
+          }
+          span{
+            display: inline-block;
+            padding: 2rem;
+            font-size: 3vw;
+            color: #666;
+          }
+        }
+      }
+      .m-defaultPage{
+        position: fixed;
+        top: 1.17333rem;
+        left: 0;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+        background-color: #f4f4f4;
+        text-align: center;
+        .container{
+          position: absolute;
+          top: -.66667rem;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          height: 30rem;
+          margin: auto;
+          .img{
+            background-image: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-a8fe3f12e5.png);
+            display: inline-block;
+            width: 12.72rem;
+            height: 12.72rem;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+          }
+          .txt{
+            font-size: .37333rem;
+            line-height: 1;
+            color: #7f7f7f;
+            .noCart-login{
+              margin-top: -.26667rem;
+              .noCart-title{
+                margin-bottom: 2rem;
+                line-height: 1;
+                font-size: 4vw;
+                color: #999;
+              }
+              .noCart-btn{
+                margin: auto;
+                width: 28.4rem;
+                height: 4.5rem;
+                font-size: 4.5vw;
+                line-height: 4.5rem;
+                color: #fff;
+                background-color: #b4282d;
+                border-radius: .04rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+</style>

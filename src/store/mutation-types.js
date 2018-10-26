@@ -1,0 +1,5 @@
+export const Banner='banner'
+export const Home = 'home'
+export const Nav = 'nav'
+export const Detail = 'detail'
+export const LoginWay = 'loginway'
